@@ -1,0 +1,25 @@
+Package: oncoRsubmissionLab
+Title: Oncology R Submission Lab
+Version: 0.1.0
+Authors@R: person("Learner", "Maintainer", email = "you@example.com", role = c("aut", "cre"))
+Description: Educational Shiny application for learning how oncology FDA
+    study-data packages (SDTM, ADaM, TLFs, reviewer's guides, eCTD Module 5)
+    are assembled in R, as the counterpart of a SAS programming workflow.
+    Not a regulatory submission and not validated software.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 4.1)
+Imports:
+    shiny,
+    bslib,
+    DT
+Suggests:
+    admiral,
+    admiralonco,
+    dplyr,
+    haven,
+    xportr
+URL: https://github.com/YOUR-USER/onco-r-submission-lab
+BugReports: https://github.com/YOUR-USER/onco-r-submission-lab/issues
+Language: en-US

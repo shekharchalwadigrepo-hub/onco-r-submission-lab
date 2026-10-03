@@ -1,0 +1,14 @@
+name: app-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+      - name: Confirm the app parses
+        run: Rscript -e 'parse("app.R"); parse("R/content.R"); cat("ok\n")'
